@@ -1,0 +1,28 @@
+app = "ollie-assistants"
+primary_region = "iad"
+
+[build]
+
+[env]
+  API_BASE_URL = "http://127.0.0.1:8000"
+  PORT = "8501"
+  FRONTIER_MODEL = "gpt-4.1"
+  FRONTIER_PROVIDER = "openai"
+  OSS_MODEL = "oss-assistant"
+  OSS_SERVED_MODEL_NAME = "oss-assistant"
+  OSS_PROVIDER = "openai_compatible"
+  MODAL_L4_USD_PER_HOUR = "0.80"
+  OPENAI_INPUT_USD_PER_1M_TOKENS = "2.00"
+  OPENAI_OUTPUT_USD_PER_1M_TOKENS = "8.00"
+
+[http_service]
+  internal_port = 8501
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = true
+  min_machines_running = 1
+
+[[vm]]
+  memory = "1gb"
+  cpu_kind = "shared"
+  cpus = 1

@@ -36,6 +36,33 @@ uv run ollie-eval
 
 The main app is lightweight and can deploy to a free app host such as Render, Railway, Fly.io, or a Hugging Face Space. The OSS model runs separately on Modal and exposes an OpenAI-compatible `/v1/chat/completions` endpoint.
 
+## Hugging Face Spaces Deployment
+
+The repo includes a Docker deployment that runs Streamlit on port `7860` and an
+internal FastAPI server on `127.0.0.1:8000`.
+
+Use a Hugging Face **Docker Space** and set these secrets:
+
+```text
+OPENAI_API_KEY
+OSS_BASE_URL=https://your-modal-endpoint/v1
+OSS_BEARER_TOKEN
+```
+
+Set these variables:
+
+```text
+API_BASE_URL=http://127.0.0.1:8000
+FRONTIER_MODEL=gpt-4.1
+OSS_MODEL=oss-assistant
+OSS_SERVED_MODEL_NAME=oss-assistant
+MODAL_L4_USD_PER_HOUR=0.80
+OPENAI_INPUT_USD_PER_1M_TOKENS=2.00
+OPENAI_OUTPUT_USD_PER_1M_TOKENS=8.00
+```
+
+The container entrypoint is `scripts/start_app.sh`.
+
 Deploy OSS model endpoint:
 
 ```bash

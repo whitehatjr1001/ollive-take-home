@@ -20,6 +20,8 @@ openspec/
 .env
 .env.*
 !.env.example
+.hf-secrets.env
+.hf-vars.env
 .streamlit/secrets.toml
 
 # Local runtime state
@@ -33,6 +35,7 @@ openspec/
 # Modal / deployment local state
 .modal/
 modal.toml
+.fly/
 
 # Streamlit local state
 .streamlit/config.toml

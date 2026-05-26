@@ -37,6 +37,9 @@ ollie-eval = "ollie_assistants.evals.cli:main"
 [tool.uv]
 package = true
 
+[tool.hatch.build.targets.wheel]
+packages = ["src/ollie_assistants"]
+
 [tool.ruff]
 line-length = 100
 target-version = "py311"

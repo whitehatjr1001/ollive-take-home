@@ -106,9 +106,9 @@ async def run_reports(include_benchmark: bool, use_llm_judge: bool) -> str:
 
 
 def build_demo() -> gr.Blocks:
-    with gr.Blocks(title="Ollie Assistants") as demo:
+    with gr.Blocks(title="Ollive Assistants") as demo:
         with gr.Tab("Chat"):
-            gr.Markdown("# Ollie Assistants")
+            gr.Markdown("# Ollive Assistants")
             assistant_kind = gr.Radio(["oss", "frontier", "both"], value="oss", label="Assistant")
             show_trace = gr.Checkbox(value=False, label="Show trace")
             chatbot = gr.Chatbot()

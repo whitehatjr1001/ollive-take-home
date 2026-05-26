@@ -1,5 +1,5 @@
 ---
-title: Ollie Assistants
+title: Ollive Assistants
 emoji: 🧪
 colorFrom: blue
 colorTo: green
@@ -8,7 +8,7 @@ app_port: 7860
 pinned: false
 ---
 
-# Ollie Assistants
+# Ollive Assistants
 
 Docker Space for comparing an OSS Modal-vLLM assistant with a frontier OpenAI
 assistant. The container runs Streamlit on port `7860` and an internal FastAPI

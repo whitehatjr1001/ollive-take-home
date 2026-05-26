@@ -36,7 +36,7 @@ app = modal.App(APP_NAME)
 
 
 def build_proxy_app() -> FastAPI:
-    proxy = FastAPI(title="Ollie OSS vLLM Proxy")
+    proxy = FastAPI(title="Ollive OSS vLLM Proxy")
     validator = BearerTokenValidator(os.environ.get("OSS_BEARER_TOKEN"))
     vllm_base_url = f"http://127.0.0.1:{VLLM_PORT}"
 

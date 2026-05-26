@@ -46,11 +46,11 @@ def get_assistant_labels() -> dict[str, AssistantLabel]:
 
 
 def main() -> None:
-    st.set_page_config(page_title="Ollie Assistants", layout="wide")
+    st.set_page_config(page_title="Ollive Assistants", layout="wide")
     labels = get_assistant_labels()
 
     with st.sidebar:
-        st.title("Ollie Assistants")
+        st.title("Ollive Assistants")
         page = st.radio(
             "View",
             ["Chat", "Observability", "Reports"],

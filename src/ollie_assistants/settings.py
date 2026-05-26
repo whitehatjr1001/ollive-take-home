@@ -7,7 +7,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 
-    app_name: str = "Ollie Assistants"
+    app_name: str = "Ollive Assistants"
     openai_api_key: str | None = None
     frontier_model: str = "gpt-4.1-mini"
     openai_input_usd_per_1m_tokens: float = 0.40

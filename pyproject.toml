@@ -33,6 +33,7 @@ dev = [
 ollie-api = "ollie_assistants.main:run"
 ollie-gradio = "ollie_assistants.interface.gradio_app:main"
 ollie-eval = "ollie_assistants.evals.cli:main"
+ollie-report-pdf = "ollie_assistants.reports.pdf_cli:main"
 
 [tool.uv]
 package = true

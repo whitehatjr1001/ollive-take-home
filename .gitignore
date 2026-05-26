@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyre/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+openspec/
+.codex/
+
+# Local env/secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Local runtime state
+.runs/
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.jsonl
+
+# Modal / deployment local state
+.modal/
+modal.toml
+
+# Streamlit local state
+.streamlit/config.toml
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
